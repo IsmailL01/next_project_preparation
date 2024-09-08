@@ -1,0 +1,35 @@
+.partnerCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.partnerCardItem {
+  height: 150px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 2px 1px 6px #000;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow:
+      3px 1px 9px #000000ab,
+      6px 6px 15px #000000c9;
+  }
+
+}
+
+.partnerCardLink {
+  /* Чтобы ссылка (a) занимала всю область li */
+  display: block;
+  /* Заполнить всю высоту li */
+  height: 100%;
+}
+
+.partnerCardLogo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
