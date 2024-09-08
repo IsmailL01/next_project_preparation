@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 // import { NavHeader } from "../../navHeader/ui/NavHeader";
 import MenuBtnSvg from "./menu_btn.svg";
 import Link from "next/link";
-import { useTheme } from "@/app/providers/themeProvider/lib/useTheme";
+import { useTheme } from "../../../providers/themeProvider/lib/useTheme";
 
 export const Header = () => {
   const { t, i18n } = useTranslation();
@@ -45,7 +45,7 @@ export const Header = () => {
   return (
     <header className={cls.header}>
       <div className={cls.headerLogo}>
-        <Link href="/">Logo</Link>
+        <Link href='/'>Logo</Link>
       </div>
 
       <div className={`${cls.headerDesktop}  ${isMobileWind ? cls.hide : ""}`}>
@@ -57,7 +57,7 @@ export const Header = () => {
             setMobileMenu(true);
           }}
         >
-          <img src={MenuBtnSvg} alt="" />
+          <img src={MenuBtnSvg} alt='' />
         </button>
       </div>
       <div className={cls.headerBacLang}>
